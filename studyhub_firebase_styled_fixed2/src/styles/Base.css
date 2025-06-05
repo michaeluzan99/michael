@@ -1,0 +1,151 @@
+:root {
+  --blue: #1e3a8a;
+  --light-blue: #3b82f6;
+  --white: #ffffff;
+  --gray-light: #f3f4f6;
+  --gray-dark: #374151;
+  --red: #dc2626;
+  --radius: 10px;
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--gray-light);
+  color: var(--gray-dark);
+}
+
+a {
+  color: var(--light-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-title {
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  font-weight: 700;
+  color: var(--blue);
+  margin-bottom: 1rem;
+}
+
+.card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  padding: 1.5rem 2rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.btn-primary {
+  background: var(--blue);
+  color: var(--white);
+  padding: 0.6rem 1.4rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: var(--light-blue);
+}
+
+.btn-danger {
+  background: var(--red);
+  color: var(--white);
+  padding: 0.4rem 1rem;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+  background: #b91c1c;
+}
+
+/* Navbar */
+.navbar {
+  background: var(--blue);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.navbar .user-info {
+  font-style: italic;
+}
+
+/* Form inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: var(--radius);
+  border: 1px solid #cbd5e1;
+  font-size: 1rem;
+  font-family: var(--font-family);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--blue);
+  box-shadow: 0 0 5px var(--light-blue);
+  background-color: #f9fafb;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--light-blue);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--gray-light);
+}
+
+/* Utility */
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}

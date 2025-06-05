@@ -1,0 +1,116 @@
+.page-wrapper {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.page-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--blue);
+  margin-bottom: 1.5rem;
+}
+
+.task-input-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.task-input {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  border: 2px solid var(--blue);
+  border-radius: 9999px;
+  outline-offset: 2px;
+  transition: border-color 0.3s ease;
+}
+
+.task-input:focus {
+  border-color: var(--blue-light);
+}
+
+.btn-primary {
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  padding: 0.6rem 1.8rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--blue-light);
+}
+
+.tasks-columns {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.task-column {
+  flex: 1;
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 14px rgb(0 0 0 / 0.05);
+  padding: 1rem;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.task-column-title {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--blue);
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.empty-message {
+  color: #999;
+  text-align: center;
+  margin-top: 2rem;
+  flex-grow: 1;
+}
+
+.task-item {
+  background: #f9f9f9;
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+  transition: background-color 0.15s ease;
+}
+
+.task-item.completed {
+  background-color: #d1e7dd;
+  color: #2f5132;
+  text-decoration: line-through;
+}
+
+.task-text {
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.btn-delete {
+  background: transparent;
+  border: none;
+  color: #dc3545;
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.3s ease;
+}
+
+.btn-delete:hover {
+  color: #a71d2a;
+}

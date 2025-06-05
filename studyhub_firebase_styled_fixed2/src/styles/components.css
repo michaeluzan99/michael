@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card {
+    @apply bg-white rounded-[var(--radius)] shadow-lg p-5;
+  }
+
+  .btn-primary {
+    @apply bg-[var(--blue)] text-white px-5 py-2 rounded-full hover:bg-[var(--blue-light)];
+  }
+}

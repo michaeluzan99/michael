@@ -1,0 +1,5 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{ --blue:#2563eb; --blue-light:#3b82f6; --radius:1.5rem; }

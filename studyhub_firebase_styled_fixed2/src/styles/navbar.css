@@ -1,0 +1,109 @@
+.navbar-container {
+  background: #f6f9fd;
+  box-shadow: 0 2px 10px 0 rgba(59,130,246,0.07);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  font-family: inherit;
+}
+.navbar-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.7em 2vw;
+  position: relative;
+}
+.navbar-logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #164391;
+  cursor: pointer;
+  margin-left: 18px;
+  letter-spacing: 0.05em;
+
+}
+.navbar-links {
+  display: flex;
+  gap: 18px;
+}
+.navbar-link {
+  padding: 7px 18px;
+  border-radius: 9px;
+  color: #164391;
+  font-weight: 500;
+  font-size: 1.01rem;
+  text-decoration: none;
+  transition: background 0.16s, color 0.15s;
+}
+.navbar-link.active,
+.navbar-link:focus,
+.navbar-link:hover {
+  background: #e0eaff;
+  color: #2563eb;
+  font-weight: 700;
+}
+.navbar-user-area {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.navbar-username {
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-left: 8px;
+}
+.navbar-btn-logout {
+  background: #ffe7e6;
+  color: #d7263d;
+  font-weight: 600;
+  border: none;
+  padding: 7px 18px;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: background 0.16s;
+}
+.navbar-btn-logout:hover {
+  background: #ffd2cf;
+}
+.navbar-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  margin-right: 12px;
+  cursor: pointer;
+}
+@media (max-width: 850px) {
+  .navbar-links {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 60px;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 2px 18px 0 rgba(22,67,145,0.13);
+    border-radius: 14px;
+    padding: 18px;
+    min-width: 170px;
+    z-index: 200;
+  }
+  .navbar-links.open {
+    display: flex;
+  }
+  .navbar-menu-btn {
+    display: block;
+  }
+  .navbar-user-area {
+    display: none;
+  }
+}
+.navbar-mobile-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(22,67,145,0.07);
+  z-index: 150;
+}
